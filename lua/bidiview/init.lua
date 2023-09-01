@@ -41,6 +41,16 @@ local function bidi_lines(lines)
 end
 
 local function multi_dig()
+    --[[
+    Check if character under cursor has multiple digraphs
+
+    example:
+    ascii command output when cursor is on a phrase like 'لا' is like this:
+    <ﻝ> 1604, Hex 0644, Oct 3104, Digr l+ <ﺍ> 1575, Hex 0627, Oct 3047, Digr a+
+
+    more info:
+        https://neovim.io/doc/user/digraph.html#digraphs
+    ]]
     character_info = vim.api.nvim_command_output("ascii")
     local p = "<.*> +([0-9]+)"
     local char_dec = string.match(character_info, p)
