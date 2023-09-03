@@ -143,6 +143,13 @@ local function view_set_name()
     local buf_name = vim.api.nvim_call_function("bufname", {bid})
     local view_buf_name = "bidi-" .. buf_name
     vim.api.nvim_call_function("nvim_buf_set_name", {view_bid, view_buf_name})
+    local buf_filetype = vim.api.nvim_call_function(
+        "nvim_buf_get_option", {bid, "filetype"}
+    )
+    vim.api.nvim_call_function("nvim_buf_set_option", {
+        view_bid, "filetype", buf_filetype
+    })
+
 end
 
 local function view_init()
