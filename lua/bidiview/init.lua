@@ -176,11 +176,12 @@ local function view_show()
 end
 
 local function view_hide()
-    window_binds_unset(view_wid)
+    window_binds_unset(wid)
     vim.api.nvim_call_function("nvim_win_close", {view_wid, true})
 end
 
 local function view_wipe()
+    window_binds_unset()
     vim.api.nvim_command("bwipeout " .. view_bid)
 end
 
