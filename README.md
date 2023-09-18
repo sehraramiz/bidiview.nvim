@@ -8,6 +8,11 @@
 Plug 'sehraramiz/bidiview.nvim'
 ```
 
+- Setup
+```lua
+require("bidiview").setup()
+```
+
 - Remaps
 ```
 nnoremap <Leader>bd :ShowBidiView<CR>
