@@ -25,6 +25,10 @@ nnoremap <Leader>bdx :HideBidiView<CR>
 
 ![bidiview](./bidiview.gif)
 
-چون به نظرم  یه جاهایی در مقابل چپ به راست مقاومت نکنیم بهتر هست. [کج و کوله بخون، روون ویرایش کن](http://sehraramiz2.ir/ltr.html)
+چون به نظرم  یه جاهایی در مقابل چپ به راست مقاومت نکنیم بهتر هست.
+
+[کج و کوله بخون، روون ویرایش کن](http://sehraramiz2.ir/ltr.html)
+
+[بر او راست چپ کرد و چپ کرد راست](http://sehraramiz2.ir/bidiview.html)
 
 </p>
